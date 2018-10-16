@@ -30,7 +30,7 @@ def FM(feature_dim):
     liner = tf.keras.layers.Dense(units=1, 
                                   bias_regularizer=tf.keras.regularizers.l2(0.01),
                                   kernel_regularizer=tf.keras.regularizers.l1(0.02),
-                                  activation=tf.nn.sigmoid)(inputs)
+                                  )(inputs)
     cross = MyLayer(feature_dim)(inputs)
     add = tf.keras.layers.Add()([liner, cross])
     predictions = tf.keras.layers.Activation('sigmoid')(add)
