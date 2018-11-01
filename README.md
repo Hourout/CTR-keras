@@ -3,6 +3,6 @@ Keras implementations of CTR
 
 
 ## Completed list
-- LR
-- FM
-- FFM
+- LR (Logistic Regression)
+- FM (Factorization Machines)
+- FFM (Field-Aware Factorization Machines)
