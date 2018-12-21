@@ -34,10 +34,8 @@ class MyLayer(tf.keras.layers.Layer):
 def FFM(feature_dim, field_dict, field_dim, output_dim=30):
     inputs = tf.keras.Input((feature_dim,))
     liner = tf.keras.layers.Dense(1)(inputs)
-    print(liner.shape)
     cross = MyLayer(field_dict, field_dim, feature_dim, output_dim)(inputs)
     cross = tf.keras.layers.Reshape((1,))(cross)
-    print(cross.shape)
     add = tf.keras.layers.Add()([liner, cross])
     predictions = tf.keras.layers.Activation('sigmoid')(add)
     model = tf.keras.Model(inputs=inputs, outputs=predictions)
