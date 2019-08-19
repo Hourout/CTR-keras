@@ -19,7 +19,7 @@ class MyLayer(tf.keras.layers.Layer):
 
     def call(self, x):
         a = K.pow(K.dot(x,self.kernel), 2)
-        b = K.dot(x, K.pow(self.kernel, 2))
+        b = K.dot(K.pow(x, 2), K.pow(self.kernel, 2))
         return K.mean(a-b, 1, keepdims=True)*0.5
 
     def compute_output_shape(self, input_shape):
