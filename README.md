@@ -11,3 +11,8 @@ tensorflow2.X implementations of CTR
 
 ## Welcome to WeChat blog
 ![](qrcode_for_gh_213bdb5b4f27_344.jpg)
+
+## Contact
+Please contact me if you have any related questions or improvements.
+
+[WeChat](/image/hourout_wechat.jpg)
