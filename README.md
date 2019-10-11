@@ -10,7 +10,7 @@ tensorflow2.X implementations of CTR
 
 
 ## Welcome to WeChat blog
-![](/image/keras-wechat.jpg)
+![](/image/keras_wechat.jpg)
 
 ## Contact
 Please contact me if you have any related questions or improvements.
